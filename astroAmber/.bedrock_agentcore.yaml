@@ -1,0 +1,62 @@
+default_agent: newAgent
+agents:
+  newAgent:
+    name: newAgent
+    language: python
+    node_version: '20'
+    entrypoint: C:/Users/ajays/OneDrive/Desktop/Docs/aws-learnings/agents/new-agent/astroAmber/src/main.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: none
+    source_path: C:\Users\ajays\OneDrive\Desktop\Docs\aws-learnings\agents\new-agent\astroAmber
+    aws:
+      execution_role: arn:aws:iam::121218444130:role/AmazonBedrockAgentCoreSDKRuntime-eu-west-2-e9937f9be3
+      execution_role_auto_create: false
+      account: '121218444130'
+      region: eu-west-2
+      ecr_repository: 121218444130.dkr.ecr.eu-west-2.amazonaws.com/bedrock-agentcore-newagent
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: newAgent-BKw0O46tkE
+      agent_arn: arn:aws:bedrock-agentcore:eu-west-2:121218444130:runtime/newAgent-BKw0O46tkE
+      agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-newagent-builder
+      execution_role: arn:aws:iam::121218444130:role/AmazonBedrockAgentCoreSDKCodeBuild-eu-west-2-e9937f9be3
+      source_bucket: bedrock-agentcore-codebuild-sources-121218444130-eu-west-2
+    memory:
+      mode: NO_MEMORY
+      memory_id: null
+      memory_arn: null
+      memory_name: null
+      event_expiry_days: 30
+      first_invoke_memory_check_done: false
+      was_created_by_toolkit: false
+    identity:
+      credential_providers: []
+      workload: null
+    aws_jwt:
+      enabled: false
+      audiences: []
+      signing_algorithm: ES384
+      issuer_url: null
+      duration_seconds: 300
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false
