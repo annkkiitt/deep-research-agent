@@ -4,9 +4,13 @@ An intelligent research assistant powered by AWS Bedrock AgentCore and Strands A
 
 ## Demo
 
-https://github.com/user-attachments/assets/deep_research.mp4
+![Demo Video](./deep_research.gif)
 
 > Watch the agent in action performing deep research with web search, extraction, and crawling capabilities.
+
+**Alternative:** Convert your video to GIF for better GitHub display:
+- Use [ezgif.com](https://ezgif.com/video-to-gif) to convert MP4 to GIF
+- Or upload to YouTube/Loom and embed the link
 
 ## Overview
 
@@ -55,8 +59,6 @@ This project demonstrates a production-ready AI agent system that combines:
 - Strands Agent SDK
 - AWS Bedrock AgentCore
 - Tavily API (web research)
-- FastAPI/Starlette (ASGI)
-- Docker
 
 ### Frontend
 - Next.js 15
