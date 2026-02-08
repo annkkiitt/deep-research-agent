@@ -8,10 +8,6 @@ An intelligent research assistant powered by AWS Bedrock AgentCore and Strands A
 
 > Watch the agent in action performing deep research with web search, extraction, and crawling capabilities.
 
-**Alternative:** Convert your video to GIF for better GitHub display:
-- Use [ezgif.com](https://ezgif.com/video-to-gif) to convert MP4 to GIF
-- Or upload to YouTube/Loom and embed the link
-
 ## Overview
 
 This project demonstrates a production-ready AI agent system that combines:
@@ -31,7 +27,7 @@ This project demonstrates a production-ready AI agent system that combines:
   - Web Extract (content extraction)
   - Web Crawl (deep site exploration)
   - Research Formatter (citation and formatting)
-- **Deployment**: Containerized with Docker, deployed to AWS
+- **Deployment**: Deployed to AWS agentcore
 
 ### Frontend (Next.js)
 - **Framework**: Next.js 15 with App Router
@@ -233,10 +229,6 @@ Invokes the research agent with streaming response.
 - [ ] Custom research templates
 - [ ] Collaborative research sessions
 - [ ] Integration with more data sources
-
-## License
-
-MIT
 
 ## Author
 
